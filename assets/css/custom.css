@@ -142,6 +142,10 @@ footer .text-section__content a:hover {
   color: #fff;
 }
 
+.contact-cards-section .container {
+  display: block !important;
+}
+
 [data-bs-theme="dark"] .contact-cards-section {
   background-color: #3a6b65;
 }
