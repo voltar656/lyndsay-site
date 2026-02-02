@@ -152,7 +152,8 @@ footer .text-section__content a:hover {
 }
 
 .contact-cards-section .lead {
-  opacity: 0.85;
+  opacity: 1;
+  color: #e0f0ee;
 }
 
 .contact-card-link {
