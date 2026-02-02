@@ -13,3 +13,6 @@ export PATH=$PWD:$PATH
 
 # Install npm dependencies
 npm install
+
+# Build site
+./hugo --minify
