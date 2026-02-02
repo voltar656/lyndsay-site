@@ -53,6 +53,10 @@ footer .text-section__content a:hover {
    Policy Expertise Section Styles
    ========================================= */
 
+#expertise {
+  margin-top: 4rem;
+}
+
 .expertise-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
