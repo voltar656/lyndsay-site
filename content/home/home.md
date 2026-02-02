@@ -44,6 +44,7 @@ draft = false
 
 {{< experience-list
     title="Professional Experience"
+    sectionId="experience"
     padding="false" >}}
 
 {{< accomplishments-section

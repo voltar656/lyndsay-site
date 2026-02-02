@@ -172,12 +172,12 @@ name = 'About'
 URL = '#about'
 weight = 2
 [[languages.en.menus.header]]
-name = 'Experience'
-URL = '#experience'
-weight = 3
-[[languages.en.menus.header]]
 name = 'Education'
 URL = '#education'
+weight = 3
+[[languages.en.menus.header]]
+name = 'Experience'
+URL = '#experience'
 weight = 4
 [[languages.en.menus.header]]
 pre = "email"
