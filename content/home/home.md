@@ -14,11 +14,6 @@ draft = false
     imgScale="0.6"
  >}}
 
-{{< platform-links >}}
-    {{< link icon="linkedin" url="https://www.linkedin.com/in/lyndsay-karges" >}}
-    {{< link icon="envelope" url="mailto:lyndsaykarges@gmail.com" >}}
-{{< /platform-links >}}
-
 {{< /showcase-section >}}
 
 {{< about-section
