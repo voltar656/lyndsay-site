@@ -1,0 +1,83 @@
+{{/*
+  contact-cards.html - Get In Touch Section with Cards
+  Adapted from Site1 React component
+*/}}
+
+{{ $sectionId := .Get "sectionId" | default "contact" }}
+{{ $title := .Get "title" | default "Get in Touch" }}
+{{ $subtitle := .Get "subtitle" | default "Open to consulting opportunities, speaking engagements, and policy collaboration" }}
+
+<section id="{{ $sectionId }}" class="section contact-cards-section rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section__title text-white mb-3">{{ $title }}</h2>
+                {{ if $subtitle }}
+                <p class="lead text-white-50">{{ $subtitle }}</p>
+                {{ end }}
+            </div>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Email -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="mailto:lyndsaykarges@gmail.com" class="contact-card-link">
+                    <div class="card h-100 contact-card text-center">
+                        <div class="card-body py-4">
+                            <div class="contact-card-icon mx-auto mb-3">
+                                <i class="icon-email"></i>
+                            </div>
+                            <h5 class="contact-card-title">Email</h5>
+                            <p class="contact-card-text small mb-0">lyndsaykarges@gmail.com</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Phone -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="tel:+17804513083" class="contact-card-link">
+                    <div class="card h-100 contact-card text-center">
+                        <div class="card-body py-4">
+                            <div class="contact-card-icon mx-auto mb-3">
+                                📞
+                            </div>
+                            <h5 class="contact-card-title">Phone</h5>
+                            <p class="contact-card-text small mb-0">780-451-3083</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- LinkedIn -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="https://www.linkedin.com/in/lyndsay-karges" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                    <div class="card h-100 contact-card text-center">
+                        <div class="card-body py-4">
+                            <div class="contact-card-icon mx-auto mb-3">
+                                <i class="icon-linkedin"></i>
+                            </div>
+                            <h5 class="contact-card-title">LinkedIn</h5>
+                            <p class="contact-card-text small mb-0">linkedin.com/in/lyndsay-karges</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Resume -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="/LyndsayKarges-Resume.pdf" target="_blank" class="contact-card-link">
+                    <div class="card h-100 contact-card text-center">
+                        <div class="card-body py-4">
+                            <div class="contact-card-icon mx-auto mb-3">
+                                <i class="icon-file-pdf"></i>
+                            </div>
+                            <h5 class="contact-card-title">Download CV</h5>
+                            <p class="contact-card-text small mb-0">View Full Resume</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

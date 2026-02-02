@@ -1,0 +1,110 @@
+{{/*
+  accomplishments-section.html - Professional Accomplishments Highlight Cards
+*/}}
+
+{{ $sectionId := .Get "sectionId" | default "accomplishments" }}
+{{ $title := .Get "title" | default "Key Accomplishments" }}
+{{ $subtitle := .Get "subtitle" | default "Measurable impact across policy leadership, team development, and government operations" }}
+
+<section id="{{ $sectionId }}" class="section section--border-bottom rad-animation-group accomplishments-section">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section__title">{{ $title }}</h2>
+                {{ if $subtitle }}
+                <p class="lead text-muted">{{ $subtitle }}</p>
+                {{ end }}
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Budget Management -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">$1.2B+</div>
+                        <h5 class="card-title">Annual Budget Oversight</h5>
+                        <p class="card-text small">Contract administration and payment control management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Leadership -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">17+</div>
+                        <h5 class="card-title">Team Members Led</h5>
+                        <p class="card-text small">Direct leadership across multiple government divisions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Policy Documents -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">3+</div>
+                        <h5 class="card-title">Cabinet Memoranda</h5>
+                        <p class="card-text small">Indigenous Climate, Northern Strategy, Civilian Response</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FOIP Requests -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">92</div>
+                        <h5 class="card-title">FOIP Requests</h5>
+                        <p class="card-text small">Processed within legislated timeline in a single fiscal year</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emergency Response -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">200+</div>
+                        <h5 class="card-title">Award Ceremony Guests</h5>
+                        <p class="card-text small">Led Emergency Management Exemplary Service Award ceremonies</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wildfire Response -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">3</div>
+                        <h5 class="card-title">Wildfire Responses</h5>
+                        <p class="card-text small">Policy and funding for Nova Scotia, NWT, and Jasper initiatives</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Years Experience -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">12+</div>
+                        <h5 class="card-title">Years in Leadership</h5>
+                        <p class="card-text small">Progressive management roles in federal and provincial government</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- National Risk Profile -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 accomplishment-card text-center">
+                    <div class="card-body">
+                        <div class="accomplishment-number">5</div>
+                        <h5 class="card-title">Risk Profile Chapters</h5>
+                        <p class="card-text small">Led National Risk Profile Public Report development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

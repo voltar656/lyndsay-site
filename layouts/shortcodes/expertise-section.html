@@ -1,0 +1,225 @@
+{{/*
+  expertise-section.html - Policy Expertise Section with Cards
+  Adapted from Site1 React component
+*/}}
+
+{{ $sectionId := .Get "sectionId" | default "expertise" }}
+{{ $title := .Get "title" | default "Policy Expertise" }}
+{{ $subtitle := .Get "subtitle" | default "Comprehensive experience across emergency management, Indigenous policy, infrastructure, and strategic government operations" }}
+
+<section id="{{ $sectionId }}" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section__title">{{ $title }}</h2>
+                {{ if $subtitle }}
+                <p class="lead text-muted">{{ $subtitle }}</p>
+                {{ end }}
+            </div>
+        </div>
+        
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h3 class="text-center mb-4">Policy Areas</h3>
+            </div>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <!-- Stakeholder Engagement -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            🎯
+                        </div>
+                        <div>
+                            <h5 class="card-title">Stakeholder Engagement & Consultation</h5>
+                            <p class="card-text small">Province-wide consultations, multi-stakeholder coordination, What We Heard reporting, industry association partnerships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Intergovernmental Relations -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            🌐
+                        </div>
+                        <div>
+                            <h5 class="card-title">Intergovernmental Relations</h5>
+                            <p class="card-text small">Federal-Provincial-Territorial coordination, cross-ministry collaboration, Pacific Gateway Alliance participation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Infrastructure & Capital Planning -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            🏢
+                        </div>
+                        <div>
+                            <h5 class="card-title">Infrastructure & Capital Planning</h5>
+                            <p class="card-text small">Capital plan delivery, contract administration, project delivery standardization, facility emergency planning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Legislative & Regulatory Policy -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            ⚖️
+                        </div>
+                        <div>
+                            <h5 class="card-title">Legislative & Regulatory Policy</h5>
+                            <p class="card-text small">Legislative planning, Order in Council development, regulatory reviews, Ministerial Orders, Motions for Return</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Strategic Planning -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            📈
+                        </div>
+                        <div>
+                            <h5 class="card-title">Strategic Planning & Implementation</h5>
+                            <p class="card-text small">Strategic agenda development, policy implementation plans, whole-of-society engagement, cross-jurisdictional coordination</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Indigenous Relations -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            🤝
+                        </div>
+                        <div>
+                            <h5 class="card-title">Indigenous Relations & Policy</h5>
+                            <p class="card-text small">Indigenous emergency management, bilateral and multilateral engagement, co-development with First Nations, Métis, and Inuit partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Risk Assessment -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            📊
+                        </div>
+                        <div>
+                            <h5 class="card-title">Risk Assessment & Analysis</h5>
+                            <p class="card-text small">National Risk Profile development, all-hazard risk assessment, psychosocial research, evidence-based findings and scenario planning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Transportation Policy -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            🚚
+                        </div>
+                        <div>
+                            <h5 class="card-title">Transportation Policy</h5>
+                            <p class="card-text small">Freight transportation, market access strategy, traffic safety planning, supply chain optimization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vendor & Performance Management -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            📋
+                        </div>
+                        <div>
+                            <h5 class="card-title">Vendor & Performance Management</h5>
+                            <p class="card-text small">Vendor Performance Management Program design, key performance indicators, contract lifecycle management, industry engagement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emergency Management -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            ⚠️
+                        </div>
+                        <div>
+                            <h5 class="card-title">Emergency Management & Preparedness</h5>
+                            <p class="card-text small">Emergency preparedness policy, national risk assessment, disaster response coordination, and exemplary service recognition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Information Management -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            🗄️
+                        </div>
+                        <div>
+                            <h5 class="card-title">Information & Records Management</h5>
+                            <p class="card-text small">Information management programs, FOIP administration, knowledge management systems, corporate data governance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cabinet & Ministerial Support -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 expertise-card">
+                    <div class="card-body d-flex">
+                        <div class="expertise-icon me-3">
+                            💼
+                        </div>
+                        <div>
+                            <h5 class="card-title">Cabinet & Ministerial Support</h5>
+                            <p class="card-text small">Memoranda to Cabinet, briefing materials, issues management, ministerial correspondence, stakeholder liaison</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Core Competencies -->
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h3 class="text-center mb-4">Core Competencies</h3>
+            </div>
+        </div>
+        
+        <div class="row g-2 justify-content-center">
+            {{ $competencies := slice "Policy Analysis & Development" "Strategic Leadership" "Team Management & Mentoring" "Stakeholder Engagement" "Indigenous Relations" "Emergency Management" "Risk Assessment" "Legislative Drafting" "Cabinet Submissions" "Project Management" "Change Management" "Performance Metrics" "Budget Management" "Evidence-Based Decision Making" "Public Consultation" "Crisis Response Coordination" "Contract Administration" "Information Management" "FOIP Administration" "Mental Health Advocacy" }}
+            {{ range $competencies }}
+            <div class="col-auto">
+                <span class="badge competency-badge">{{ . }}</span>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
